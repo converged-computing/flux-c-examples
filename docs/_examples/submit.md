@@ -16,7 +16,7 @@ To submit a job, you will first want to create a [jobspec](https://flux-framewor
 This is a specification for a job in Flux, and it comes down to a json
 object with a series of expected fields describing the job you want to submit
 (e.g., command, environment) and then the resources that you need. The example
-below shows creating your own `JobSpec` type to interact with from a command,
+below shows creating your own "JobSpec" type to interact with from a command,
 submitting it, and then interacting with the Flux job to check status and cleanup.
 
 {% include snippet.html language="c" id="submit" path="src/submit.c" %}

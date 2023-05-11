@@ -32,6 +32,10 @@ example! The table of contents in [docs/_data/toc.yml](docs/_data/toc.yml) also 
 With this simple approach, we have example here that are both tested and render live in the
 web interface. Thank you!
 
+**Note** for future developers - the highlight syntax requires a special JS import in
+the [_layouts/snippet-page.html](_layouts/snippet-page.html). If you add a language you
+will need to add a file!
+
 ## License
 
 HPCIC DevTools is distributed under the terms of the MIT license.
