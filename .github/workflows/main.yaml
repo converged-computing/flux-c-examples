@@ -3,13 +3,10 @@ name: Test Flux Go
 on:
   
   # Test Nightly
-  #schedule: 
-  #- cron: 0 0 * * 0
-  push:
-    branches:
-      - nope
+  schedule: 
+  - cron: 0 0 * * 0
   # Test on pull request
-  # pull_request: []
+  pull_request: []
 
 jobs:
   build:
@@ -17,7 +14,7 @@ jobs:
       packages: write
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/converged-computing/flux-go    
+      image: ghcr.io/converged-computing/flux-c-examples
       options: --user root
     name: Build
     steps:
