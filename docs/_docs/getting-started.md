@@ -6,7 +6,7 @@ tags:
 
 # Getting Started
 
-<img src="assets/img/Flux-logo-full.png" alt="assets/img/Flux-logo-full.png" width="50%">
+<img src="{{ site.baseurl }}/assets/img/Flux-logo-full.png" alt="{{ site.baseurl }}/assets/img/Flux-logo-full.png" width="50%">
 
 
 Welcome to the Flux C Examples documentation! This project demonstrates
@@ -15,7 +15,7 @@ how to create your own interfaces to interact with Flux for use in your packages
 ## Development Environment
 
 We recommended that you use the provided (VSCode) DevContainers environment.
-This will provide Flux and Go already installed, so you can jump right in
+This will provide Flux Core and Security already installed, so you can jump right in
 to development! You can follow the [tutorial](https://code.visualstudio.com/docs/remote/containers-tutorial) where you'll basically
 need to:
 
@@ -44,7 +44,7 @@ $ sudo chown -R $USER .git/
 
 ## Building Bindings
 
-You can build the examples using the [Makefile](../Makefile). You can inspect it 
+You can build the examples using the [Makefile](https://github.com/converged-computing/flux-c-examples/blob/main/Makefile). You can inspect it 
 to see how simple it is - we target the Flux install in the container (and you
 would want to customize this based on your install of Flux).
 
