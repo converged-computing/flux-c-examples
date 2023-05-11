@@ -1,0 +1,34 @@
+name: Test Flux Go
+
+on:
+  
+  # Test Nightly
+  #schedule: 
+  #- cron: 0 0 * * 0
+  push:
+    branches:
+      - nope
+  # Test on pull request
+  # pull_request: []
+
+jobs:
+  build:
+    permissions:
+      packages: write
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/converged-computing/flux-go    
+      options: --user root
+    name: Build
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Install Bats
+      run: apt-get update && apt-get install -y bats
+
+    - name: Test Build
+      run: make
+
+    - name: Run Tests
+      run: make test
