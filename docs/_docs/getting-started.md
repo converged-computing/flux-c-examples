@@ -6,7 +6,7 @@ tags:
 
 # Getting Started
 
-<img src="assets/img/Flux-logo-full.png" alt="assets/img/Flux-logo-full.png" width="50%">
+<img src="{{ site.baseurl }}/assets/img/Flux-logo-full.png" alt="{{ site.baseurl }}/assets/img/Flux-logo-full.png" width="50%">
 
 
 Welcome to the Flux C Examples documentation! This project demonstrates
