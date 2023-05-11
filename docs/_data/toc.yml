@@ -1,0 +1,14 @@
+- title: "Getting Started"
+  url: "docs/getting-started"
+  children:
+    - title: Development Environment
+      url: "docs/getting-started/#development-environment"
+    - title: Building bindings
+      url: "docs/getting-started/#building-bindings"
+- title: "Examples"
+  url: "examples"
+  children:
+    - title: Makefile
+      url: "examples/makefile/"
+    - title: Submit
+      url: "examples/submit/"

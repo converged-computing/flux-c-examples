@@ -1,0 +1,29 @@
+---
+layout: page
+---
+
+<script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-coy.min.css" rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-go.min.js"></script>
+<script>
+function embed(path, divid) {
+
+    // Serving content from this url
+    var url = "https://raw.githubusercontent.com/{{ site.github_user }}/{{ site.github_repo }}/{{ site.branch }}/" + path
+    divid = "#" + divid
+    console.log(divid)
+    $.get(url, function(data) {
+      $(divid).text(data)
+    });
+}
+$(document).ready(function(){
+setTimeout(() => {
+  Prism.highlightAll()
+}, "500");
+})
+</script>
+
+{{ content }}
+
+<p style="padding-top:30px">Examples are served directly from <a id="from_url" href="{{ site.repo }}/" target="_blank">{{ site.repo }}</a> on GitHub. You can make contributions or suggestions for changes there.
